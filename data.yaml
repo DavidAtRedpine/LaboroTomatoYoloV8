@@ -1,0 +1,5 @@
+train: dataset/images/train  # Path to training images
+val: dataset/images/val      # Path to validation images
+
+nc: 6  # Number of classes
+names: ['b_fully_ripened', 'b_half_ripened', 'b_green', 'l_fully_ripened', 'l_half_ripened', 'l_green']  # Class names
