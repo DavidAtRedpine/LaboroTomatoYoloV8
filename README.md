@@ -46,6 +46,10 @@ Once the training succeeds, you can export the model to onnx like so. I use this
 yolo export model=/app/yolov8/runs/detect/train/weights/best.pt format=onnx imgsz=640 dynamic=False half=True
 ```
 
+### Downloading and using the onnx model
+
+You can get the model on the Hugging Face page [here](https://huggingface.co/DavidAtRedpine/sentis-LaboroTomatoYoloV8), along with instructions for how to use it in Unity.
+
 ## Other notes
 
 As part of the Docker build, the `get_tomato_dataset.py` script gets the Tomato dataset from `http://assets.laboro.ai.s3.amazonaws.com/laborotomato/laboro_tomato.zip`. You may need to change the path should it change in the future. Consult the LaboroTomato [README](https://github.com/laboroai/LaboroTomato/blob/master/README.md) file for the correct path.
